@@ -1,3 +1,24 @@
+### Why the Fork?
+
+Electron Builder uses this package to verify in your root package.json when its about to build that the schema is valid. This modules dependencies in package.json was using an array instead of an object. Fixed that so one can pull their own clone in if needed into node_modules
+
+Error presented:
+  ⨯ nodeModules.Dependency.Dependencies: ReadMapCB: expect { or n, but found [, error found in #10 byte of ...|ncies" : [],
+	"repos|..., bigger context ...|://www.josscrowcroft.com)"
+	],
+	"dependencies" : [],
+	"repository" : {"type": "git", "url": "git://g|...
+
+TODO - Push this into a NPM at some point. For now, in package.json - "JSV":"https://github.com/edward-chalon/JSV" is a quick and easy fix. 
+
+
+
+
+
+
+
+
+
 JSV: JSON Schema Validator
 ==========================
 
